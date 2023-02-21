@@ -9,7 +9,7 @@ const eta = parseInt(prompt('Iserisci età'))
 console.log('età passeggero: ' + eta)
 
 //calcolo prezzo senza applicazione sconto
-let prezzo = (percorso * 0.21)
+let prezzo = parseFloat(percorso * 0.21)
 console.log('prezzo senza sconti applicati: ' + prezzo + '€')
 
 /* calcolo prezzo sulle fasce di età così da applicare la scontistica 
@@ -26,9 +26,11 @@ else {
     
 }
 
-
-prezzo.toFixed(2);
+console.log (prezzo.toFixed(2));
 
 //stampare prezzo finale della tratta su console e pagina
 console.log ('il prezzo del biglietto è ' + prezzo + '€')
 document.querySelector('h1').innerHTML = 'il prezzo del biglietto è di ' + prezzo + '€'
+
+let test = 10.5555;
+console.log(test.toFixed(2))
